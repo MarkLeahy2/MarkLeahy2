@@ -1,0 +1,238 @@
+* {box-sizing: border-box;}
+body {
+ font-family: Arial;
+ color:#ffff00;
+ background-image: url("images/hacking.jpg");
+ text-align: center;
+}
+
+header {
+ background-image:url("images/hacking.jpg");
+ padding: 30px;
+ text-align: center;
+ font-size: 35px;
+}
+
+header h1{
+	
+font-size:5vw;
+font-family: "Anton";
+color:#ff0000;
+
+}
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+ 
+}
+
+.column {
+ float:left;
+ padding: 10px;
+ text-align:center;
+ border:1px,#ffffff;
+
+}
+
+.column30{
+width: 33.33%;
+}
+
+.column50{
+ width: 50%;
+ text-align:left;
+ border:0;
+}
+
+footer {
+	background-color: #050505;
+	padding: 10px;
+	text-align: center;
+	font-size:2em; 
+	border:3px dotted yellow
+}
+
+/* The navigation bar is 30 pixels in size, center aligned, has white letter (#fff),
+and a blue background (#369) */
+#navcontainer{
+	height:30px
+}
+
+#navcontainer ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+#navcontainer ul li {
+	display:inline;
+	padding:5px;
+	font-size:1.2em;
+}
+
+#navcontainer ul li a { 
+	text-decoration:none;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: #036;
+	border:1px solid black
+
+}
+
+#navcontainer ul li a:hover
+{
+color: #fff;
+background-color: #369;
+}
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+input[type=submit] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+ border: none;
+ cursor: pointer;
+}
+input[type=submit]:hover {
+ background-color: #45a049;
+}
+
+.contact-container {
+ background-color: #f2f2f2;
+ padding: 10px;
+}
+
+@media (max-width: 700px) {
+ .column {
+ width: 100%;
+ }
+ 
+}
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.main_container {
+  height: 46px;
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  max-width: 300px;
+  background-color: #050505;
+  align-content: center;
+}
+.container_inner {
+  height: auto;
+  border: none;
+  background-color: #050505;
+  max-width: 290px;
+  vertical-align: center;
+  padding-top: 12px;
+  padding-left: 10px;
+  align-content: center;
+}
+ .num_tiles {
+  width:30px;
+  height: 30px;
+  background-color: #050505;
+  color: #red;
+  font-size: 22px;
+  text-align: center;
+  line-height: 20px;
+  padding: 3px;
+  margin: 1.5px;
+  font-family: verdana;
+  vertical-align: center;
+}

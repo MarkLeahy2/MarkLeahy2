@@ -1,0 +1,122 @@
+<!doctype html>
+
+
+<html>
+
+ <head>
+
+<title> Contact </title>
+
+<meta name="description" content="Use the contact form to contact Marks Gameshop">
+
+<link rel="stylesheet" type="text/css" href="responsive-layout.css" />
+
+ </head>
+
+ <body>
+ <header>
+ <h1> Contact </h1>
+ </header>
+ 
+ <nav id="navcontainer">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="games.html">Games</a></li>
+		<li><a href="consoles.html">Consoles</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+ 
+
+
+ <div class="contact-container">
+ <div style="text-align:center">
+ <h2>Contact Us</h2>
+ <p>Swing by for a cup of coffee, or leave us a message:</p>
+ </div>
+ <div class="row">
+ <div class="column column50"> 
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2383.107863315696!2d-6.265654699999999!3d53.32342200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c1d23657dab%3A0x88721f47d0a4e7fe!2sRathmines%20College%20of%20Further%20Education!5e0!3m2!1sen!2sie!4v1610303203362!5m2!1sen!2sie" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+ </div>
+ <div class="column column50"> 
+ <form action="">
+ <label for="fname">First Name</label>
+ <input type="text" id="fname" name="firstname" placeholder="Your name..">
+ <label for="lname">Last Name</label>
+ <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+ <label for="country">Country</label>
+ <select id="country" name="country">
+ <option value="australia">Ireland</option>
+ <option value="canada">United Kingdom</option>
+ <option value="usa">USA</option>
+ </select>
+ <label for="subject">Subject</label>
+ <textarea id="subject" name="subject" placeholder="Write
+something.." style="height:170px"></textarea>
+ <input type="submit" value="Submit">
+ </form>
+ </div>
+ </div>
+</div>
+
+<BR> <BR>
+<a href="https://www.facebook.com/Rathminescollege" target="_blank" title="Follow us on Facebook"> <img src="images/facebook-50x50.png" alt="facebook"></a>
+
+<a href="https://www.instagram.com/rathminescollege/?hl=en" target="_blank" title="Follow us on Instagram"> <img src="images/instagram-50x50.png" alt="instagram"></a>
+
+<a href="https://twitter.com/rathminescfe?lang=en" target="_blank" title="Follow us on Twitter"> <img src="images/twitter-50x50.jpg" alt="twitter"></a>
+
+</body>
+</html>
+
+<script>
+function checkForm()
+{
+var name = document.forms["contactForm"]["fname"];
+var email = document.forms["contactForm"]["email"];
+var subject = document.forms["contactForm"]["subject"];
+var what = document.forms["contactForm"]["message"];
+if (name.value == "" )
+{
+window.alert( "Please enter your name." );
+name.focus();
+return false;
+}
+if (email.value == "" ){
+window.alert( "Please enter a valid e-mail address." );
+email.focus();
+return false ;
+}
+if (email.value.indexOf( "@" , 0) < 0)
+{
+window.alert( "Please enter a valid e-mail address." );
+email.focus();
+return false ;
+}
+if (email.value.indexOf( "." , 0) < 0)
+{
+window .alert( "Please enter a valid e-mail address." );
+email.focus();
+return false ;
+}
+if (subject.value == "" )
+{
+window.alert( "Please enter a subject." );
+subject.focus();
+return false;
+}
+
+if (what.value < 5)
+{
+alert( "Please enter a proper message" );
+what.focus();
+return false ;
+}
+return true ;
+}
+</script>	
+
+ 
+ 
+ 
